@@ -3,7 +3,7 @@ name: Branch & Path
 on:  
   push:
     paths:
-      - *.ts
+      - '*.ts'
 jobs:
   build:
     runs-on: ubuntu-latest
