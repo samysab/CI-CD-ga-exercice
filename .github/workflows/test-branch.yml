@@ -12,4 +12,4 @@ jobs:
       run: echo "Only on featuer branches"
     - name: Run a multi-line script
       run: |
-        echo "Only on DEV branch"
+        echo "Only on DEV branch test"
