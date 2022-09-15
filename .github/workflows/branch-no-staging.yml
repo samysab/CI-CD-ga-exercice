@@ -2,15 +2,14 @@ name: FeatureCI
 on:
   push:
     branches:
-      - 'dev'
+      - '!staging'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo "Only on DEV branch"
+      run: echo "Only on all branch except staging"
     - name: Run a multi-line script
       run: |
-        echo "Only on DEV branch"
-        echo "This is a DEV branch"
+        echo "Only on all branch except staging"
