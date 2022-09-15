@@ -14,4 +14,3 @@ jobs:
       run: |
         echo "Only on DEV branch"
         echo "This is a DEV branch"
-ssss
