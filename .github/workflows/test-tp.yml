@@ -1,0 +1,9 @@
+name: Branch & Path
+
+on:  
+  push:
+
+    paths: 
+      - '.github/workflows/typescript-file.yml'
+      - '*.ts'
+jobs:
