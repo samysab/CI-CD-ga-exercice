@@ -3,7 +3,7 @@ name: Events exercices
 on:
   workflow_dispatch:
 
-jobs:
+jobs: 
   print-event:
     runs-on: ubuntu-latest
 
