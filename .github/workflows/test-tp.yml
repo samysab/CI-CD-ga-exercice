@@ -2,8 +2,15 @@ name: Branch & Path
 
 on:  
   push:
-
-    paths: 
-      - '.github/workflows/typescript-file.yml'
-      - '*.ts'
+    paths:
+      - *.ts
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo "for Typescript files"
+    - name: Run a multi-line script
+      run: |
+        echo "for Typescript files"
